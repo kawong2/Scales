@@ -1,6 +1,7 @@
 void setup(){
   size(500,500);
   noLoop();
+  background(193,169,206);
 }
 void draw(){
   fill(193,169,206);
