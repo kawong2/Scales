@@ -1,11 +1,34 @@
-void setup() {
-  size(500, 500);  //feel free to change the size
-  noLoop(); //stops the draw() function from repeating
+void setup(){
+  size(500,500);
+  noLoop();
 }
-void draw() {
-  //your code here
+void draw(){
+  fill(193,169,206);
+  for(int y = 0; y <= 500; y+= 20){
+    for(int x = 0; x <= 500; x+= 20){
+      kScale(x,y);
+    }
+  }
 }
-void scale(int x, int y) {
-  //your code here
+
+void kScale(int x, int y){
+  beginShape();
+  curveVertex(x,y);
+  curveVertex(x,y);
+  curveVertex(x-15,y+20);
+  curveVertex(x-30,y+30);
+  curveVertex(x-15,y+40);
+  curveVertex(x,y+50);
+  curveVertex(x,y+50);
+  endShape();
+    beginShape();
+  curveVertex(x,y);
+  curveVertex(x,y);
+  curveVertex(x+15,y+20);
+  curveVertex(x+30,y+30);
+  curveVertex(x+15,y+40);
+  curveVertex(x,y+50);
+  curveVertex(x,y+50);
+  endShape();
 }
 
