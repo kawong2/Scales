@@ -21,7 +21,7 @@ void kScale(int x, int y){
   curveVertex(x,y+50);
   curveVertex(x,y+50);
   endShape();
-    beginShape();
+  beginShape();
   curveVertex(x,y);
   curveVertex(x,y);
   curveVertex(x+15,y+20);
